@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加减</title>
+</head>
+<body>
+<div id="app">
+        <!--时间中直接写js片段-->
+    <button v-on:click="num++">点我呀</button>
+    <h1>柳慧慧吃了{{num}}个包子</h1>
+    <button v-on:click="del">戳我呀</button>
+</div>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            num:10
+        },
+        methods: {
+            del(){
+                this.num--
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

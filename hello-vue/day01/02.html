@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插值闪烁</title>
+</head>
+<body>
+<div id="app">
+    {{name}}有{{num}}箱maney
+</div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            name:"张三",
+            num:100
+        }
+    })
+</script>
+</html>

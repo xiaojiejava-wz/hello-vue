@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--<ul>
+        <li v-for="(value,key,index) in user">
+            {{index+1}}&#45;&#45;{{key}}&#45;&#45;{{value}}
+        </li>
+    </ul>-->
+    <li v-for="(user,index) in users" :key="index">
+        <!--{{index}}-&#45;&#45;{{user.name}}-->
+        {{users[index].name}}
+    </li>
+</div>
+
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    var arr=new Vue({
+        el:"#app",
+        data:{
+           users:[
+               {name:"TOM",gender:"男",age:21},
+               {name:"JACK",gender:"女",age:22},
+               {name:"lucy",gender:"女",age:18},
+               {name:"black",gender:"男",age:24}
+           ]
+        }
+    })
+</script>
+</html>

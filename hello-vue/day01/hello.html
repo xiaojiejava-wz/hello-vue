@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+      <h1>{{name}}非常非常帅！！并且有{{num}}位世界级大美女喜欢！！</h1>
+        <button v-on:click="num++">你戳我呀</button>
+    </div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    //创建vue实例
+    var arr=new Vue({
+        el:"#app",   //el即element，该vue实例要渲染的页面元素
+            data:{//渲染页面需要的元素
+            name: "柳慧慧",
+            num:25
+        }
+    })
+</script>
+</html>

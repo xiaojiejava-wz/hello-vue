@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-bind:style="baseStyle"></div>
+    <div v-bind:style="[baseStyle,overridingStyle]"></div>
+</div>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            baseStyle:{'background-color':'red','width':'300px','height':'200px'},
+            overridingStyle:{'border':'5px solid black'}
+        }
+    })
+</script>
+</body>
+</html>

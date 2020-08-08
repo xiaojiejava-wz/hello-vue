@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{name}}非常非常帅！！有{{num}}位美女喜欢并追求！！！
+</div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    var arr=new Vue({
+        el:"#app",
+        data:{
+            name:"柳慧慧",
+            num:10
+        },
+        methods:{
+            add:function () {
+                this.num--;
+            }
+        },
+        created:function () {
+            this.num=100;
+        }
+    })
+</script>
+</html>

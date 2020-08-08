@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-text和v-model</title>
+</head>
+<body>
+<div id="app">
+ v-text------<span v-text="hello"></span><br>
+ v-model-----<span v-html="hello"></span><br>
+</div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            hello:"<h1>大家好，很高兴认识大家！！！</h1>"
+        }
+    });
+</script>
+</html>
